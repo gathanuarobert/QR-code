@@ -1,0 +1,115 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styles */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Maximum width of the card */
+    width: 100%; /* Ensure container scales for smaller screens */
+    text-align: center;
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Heading Styles */
+  .card h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph Styles */
+  .card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Attribution Text */
+  .attribution {
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+  
+  .attribution a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 480px) {
+    /* Adjust the card container for smaller screens */
+    .container {
+      padding: 15px;
+      max-width: 90%; /* Make the container width a percentage to fit smaller screens */
+    }
+  
+    /* Resize heading and paragraph text */
+    .card h2 {
+      font-size: 18px; /* Smaller heading */
+    }
+  
+    .card p {
+      font-size: 14px; /* Smaller paragraph text */
+    }
+  
+    /* Adjust attribution text size */
+    .attribution {
+      font-size: 10px; /* Make the attribution text smaller */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For tablet-sized devices */
+    .container {
+      max-width: 80%; /* Increase the container width for tablets */
+    }
+  
+    .card h2 {
+      font-size: 22px; /* Slightly larger heading */
+    }
+  
+    .card p {
+      font-size: 15px; /* Adjust paragraph size for readability */
+    }
+  }
+  
